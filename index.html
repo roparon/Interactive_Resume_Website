@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Resume</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+
+    <style>
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            text-align: center;
+            margin: 20px 0;
+        }
+
+        nav ul li {
+            display: inline-block;
+            margin-right: 15px;
+            position: relative;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            font-size: 12px;
+            color: #3498db;
+            font-weight: bold;
+        }
+
+        nav ul li a:hover {
+            color: #fbfbf9;
+        }
+
+        .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            min-width: 50px;
+            box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+            z-index: 1;
+        }
+
+        .dropdown-content a {
+            color: #3498db;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+            font-weight: normal;
+        }
+
+        .dropdown-content a:hover {
+            background-color: #7cd6c0;
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+
+        .active {
+            color: #e74c3c;
+        }
+
+        footer {
+            background-color: #2c3e50;
+            color: white;
+            padding: 5px 0;
+            text-align: center;
+            position: sticky;
+            bottom: 0;
+            width: 100%;
+            z-index: 10;
+        }
+
+        footer a {
+            color: #3498db;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+
+        footer .footer-links {
+            margin: 10px 0;
+        }
+
+        .social-icons a {
+            color: white;
+            font-size: 24px;
+            margin: 0 10px;
+            text-decoration: none;
+        }
+
+        .social-icons a:hover {
+            color: #3498db;
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <h1>Rop's Interactive Resume.</h1>
+        </header>
+        <nav>
+            <ul>
+                <li><a href="/index.html">Home</a></li>
+                <li><a href="/skills.html">MySkills</a></li>
+                <li><a href="/curriculum.html">Curriculum</a></li>
+                <li><a href="/about.html">About Me</a></li>
+                <li><a href="/contact.html">Contact Me</a></li>
+                <li><a href="/sign-in.html">Sign In</a></li>
+                <li class="dropdown">
+                    <a href="javascript:void(0)">More...</a>
+                    <div class="dropdown-content">
+                        <a href="/admission.html">Admissions</a>
+                        <a href="/events.html">What’s Coming Up</a>
+                        <a href="/testimonials.html">Testimonials</a>
+                        <a href="/faqs.html">FAQs</a>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+
+        <section id="timeline">
+            <h2>Career Timeline</h2>
+            <div class="timeline-item">
+                <h3 style="color: #3498db;">Web Developer at Africode Academy</h3>
+                <p>2020 - Present...</p>
+                <div class="timeline-content">
+                    <p>Since 2020, I’ve been on the most enriching and transformative learning journey at Africode Academy, and let me tell you, it’s been nothing short of magical! ✨ I’ve had the incredible opportunity to develop and fine-tune a wide array of skills in software development, coding, and various tech-related fields. It’s been like learning how to paint with code, where every project, every challenge, and every new tool has added a splash of color to my tech journey! 🎨💻
+
+                    What I absolutely adore about Africode Academy is its hands-on, real-world approach to learning. It’s not just about theory; it’s about diving into exciting projects, exploring cutting-edge technologies, and discovering the endless possibilities the tech world has to offer. Each day feels like a new adventure, and I’ve been able to build such a solid foundation in the tech industry that I’m confident I’m ready to take on whatever comes next. 🚀🌟
+
+                    I am especially grateful to my mentor, Engineer Chatelo, whose guidance and encouragement have been absolutely priceless. His expertise, patience, and constant support have helped me grow not only as a developer but also as an individual. With his invaluable insights, I've been able to push my limits and achieve things I never thought possible. 🙌💡
+
+                    From collaborating with amazing mentors and peers to experimenting with diverse tools and technologies, this journey has shaped me into a passionate and driven developer, eager to make my mark in the tech world. Every step has been so fulfilling, and I can’t wait to see where this journey leads me next! 💖</p>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Rop's Interactive Resume. All rights reserved.</p>
+        <div class="footer-links">
+            <a href="/privacy-policy.html">Privacy Policy</a> |
+            <a href="/terms-of-service.html">Terms of Service</a> |
+            <a href="#contact">Contact</a>
+        </div>
+        <div class="social-icons">
+            <a href="https://www.whatsapp.com" target="_blank" class="fab fa-whatsapp"></a>
+            <a href="https://www.facebook.com" target="_blank" class="fab fa-facebook"></a>
+            <a href="https://telegram.org" target="_blank" class="fab fa-telegram"></a>
+        </div>
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Me - Resume</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+            color: #333;
+        }
+
+        header {
+            background-color: #3498db;
+            color: white;
+            text-align: center;
+            padding: 5px 0;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 30px 20px;
+        }
+
+        h2 {
+            text-align: center;
+            font-size: 28px;
+            margin-bottom: 20px;
+            color: #7c6512;
+        }
+
+        .contact-form {
+            background-color: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .contact-form input,
+        .contact-form textarea {
+            width: 100%;
+            padding: 12px;
+            margin: 10px 0;
+            border-radius: 5px;
+            border: 1px solid #ddd;
+            font-size: 16px;
+        }
+
+        .contact-form input:focus,
+        .contact-form textarea:focus {
+            border-color: #3498db;
+            outline: none;
+        }
+
+        .contact-form button {
+            background-color: #3498db;
+            color: white;
+            font-size: 16px;
+            padding: 12px 20px;
+            border-radius: 5px;
+            border: none;
+            cursor: pointer;
+            width: 100%;
+        }
+
+        .contact-form button:hover {
+            background-color: #2980b9;
+        }
+
+        footer {
+            background-color: #2c3e50;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <h1>Contact Me</h1>
+</header>
+
+<div class="container">
+    <h2>I'd love to hear from you!</h2>
+    <p>If you'd like to get in touch for a project, a question, or just to connect, please use the form below.</p>
+
+    <div class="contact-form">
+        <form action="your-backend-script.php" method="POST">
+            <label for="name">Full Name</label>
+            <input type="text" id="name" name="name" placeholder="Your full name" required>
+            <label for="email">Email Address</label>
+            <input type="email" id="email" name="email" placeholder="Your email address" required>
+            <label for="message">Message</label>
+            <textarea id="message" name="message" placeholder="Your message" rows="6" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+    </div>
+</div>
+
+<footer>
+    <p>&copy; 2025 [Your Name] | All rights reserved</p>
+</footer>
+
+</body>
+
+</html>

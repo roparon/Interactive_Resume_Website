@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Software Engineer Certifications</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEJ1QJ2X1ZT+KzTyXwFjU3+NS3PLhrJHeFZmlas7vv1o7z4rOxyG5I2Xg3xdZ" crossorigin="anonymous">
+    <style>
+        body {
+            background-color: #f8f9fa;
+            font-family: 'Arial', sans-serif;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #0056b3;
+            color: white;
+            padding: 1px 0;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 42px;
+            font-weight: 600;
+            margin-bottom: 5px;
+        }
+
+        header p {
+            font-size: 20px;
+        }
+        #certifications {
+            padding: 10px 0;
+        }
+
+        #certifications h2 {
+            font-size: 30px;
+            color: #0056b3;
+            text-align: center;
+            margin-bottom: 40px;
+            font-weight: 600;
+        }
+        .cert-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+            gap: 20px;
+            padding: 0 10px;
+        }
+        .cert-item .card {
+            border: none;
+            border-radius: 15px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .cert-item .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+        }
+
+        .card-body {
+            text-align: center;
+            padding: 10px;
+        }
+
+        .card-title {
+            font-size: 20px;
+            font-weight: 600;
+            color: #0056b3;
+            margin-bottom: 10px;
+        }
+
+        .card-text {
+            font-size: 16px;
+            color: #555;
+        }
+
+        .popover-body {
+            font-size: 14px;
+            color: #333;
+        }
+
+        .cert-item img {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-bottom: 15px;
+        }
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 32px;
+            }
+
+            #certifications h2 {
+                font-size: 28px;
+            }
+
+            .cert-grid {
+                grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+            }
+
+            .card-body {
+                padding: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>My Software Engineer Certifications</h1>
+            <p>Explore the certifications I have earned as a software engineer</p>
+        </header>
+        <section id="certifications">
+            <h2>Certifications</h2>
+            <div class="cert-grid">
+                <div class="cert-item" data-bs-toggle="popover" title="Certification 1" data-bs-content="Issued by Organization 1. Full-stack web development, covering front-end and back-end technologies.">
+                    <div class="card">
+                        <div class="card-body">
+                            <img src="/media/images/download1.jpeg" alt="Certification Image">
+                            <h5 class="card-title">Full-Stack Web Development</h5>
+                            <p class="card-text">Africode Academy.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="cert-item" data-bs-toggle="popover" title="Certification 2" data-bs-content="Issued by Organization 2. Software engineering principles, design patterns, and best practices.">
+                    <div class="card">
+                        <div class="card-body">
+                            <img src="/media/images/download1.jpeg" alt="Certification Image">
+                            <h5 class="card-title">Software Engineering Principles</h5>
+                            <p class="card-text">Africode Academy.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="cert-item" data-bs-toggle="popover" title="Certification 3" data-bs-content="Issued by Organization 3. Specialization in Cloud Computing with AWS services.">
+                    <div class="card">
+                        <div class="card-body">
+                            <img src="/media/images/images.jpeg" alt="Certification Image">
+                            <h5 class="card-title">Cloud Computing with AWS</h5>
+                            <p class="card-text">Africode Academy.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz4fnFO9gybFvRz5B6I56/8q8M5wgs6h/s2bXnwrbY0v/7T2yHnHc1t5T3" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js" integrity="sha384-pzjw8f+ua7Kw1TIq0v8Fq1v6kZXuMw3vYh/J8u9z9YuZAhCk0zLgA0eHa3pm7M4M" crossorigin="anonymous"></script>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            var popoverTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="popover"]'));
+            var popoverList = popoverTriggerList.map(function (popoverTriggerEl) {
+                return new bootstrap.Popover(popoverTriggerEl);
+            });
+        });
+    </script>
+</body>
+</html>

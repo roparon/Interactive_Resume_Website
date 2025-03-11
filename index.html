@@ -105,7 +105,7 @@
         header {
             display: flex;
             align-items: center;
-            justify-content: center;
+            justify-content:center;
             gap: 0px;
         }
 
@@ -119,7 +119,24 @@
 
         header h1 {
             margin: 0;
+            font-size: 24px;
+            font-weight: bold;
         }
+
+        .video-container {
+            width: 140px;
+            height: 70px;
+            overflow: hidden;
+            border-radius: 1px;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .video-container video {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
     </style>
 </head>
 
@@ -128,7 +145,14 @@
         <header>
             <img src="https://avatars.githubusercontent.com/u/170432273?v=4" alt="Profile Photo">
             <h1>Rop's Interactive Resume.</h1>
+                        <div class="video-container">
+                <video autoplay muted loop>
+                    <source src="/media/videos/5925283-uhd_2160_3840_24fps.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
         </header>
+
         <nav>
             <ul>
                 <li><a href="/index.html">Home</a></li>
